@@ -12,9 +12,9 @@ from sklearn.neural_network import MLPClassifier
 x=[[0.,0.],[0.,1.],[1.,0.],[1.,1.]]
 y=[0,1,1,0]
 
-clf=MLPClassifier(activation='relu',solver='lbfgs',learning_rate='adaptive',hidden_layer_sizes=(2),max_iter=500, early_stopping=True, random_state=6)
+clf=MLPClassifier(activation='relu', solver='lbfgs', learning_rate='adaptive', hidden_layer_sizes=(2), max_iter=500, early_stopping=True, random_state=6)
 
 clf.fit(x,y)
 
-clf.predict(x)
+print(clf.predict(x))
 
